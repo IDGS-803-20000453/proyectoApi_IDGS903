@@ -9,6 +9,9 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { AgregarComponent } from './utl/agregar/agregar.component';
 import { EditarComponent } from './utl/editar/editar.component';
+import { MaterialModule } from './material/material.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { EditarComponent } from './utl/editar/editar.component';
     MenuComponent,
     HomeComponent,
     AgregarComponent,
-    EditarComponent
+    EditarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
