@@ -12,12 +12,14 @@ import { EditarComponent } from './utl/editar/editar.component';
 import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AlumnoFilterPipe } from './utl/alumnos-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlumnosComponent,
     MenuComponent,
+    AlumnoFilterPipe,
     HomeComponent,
     AgregarComponent,
     EditarComponent,
